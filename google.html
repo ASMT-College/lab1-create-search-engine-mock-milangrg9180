@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google first page design</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+ body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  section{
+    position:relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  section header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content:flex-end ;
+    padding:20px ;
+  }
+  section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section header ul li{
+    list-style: none;
+    margin-left:20px ;
+  }
+  section header ul li a{
+    color: #111;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  section header ul li button{
+    background: #4584ef ;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  section .main-part{
+    width: 575px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section .main-part .searchbox{
+    position: relative;
+    max-width: 900px;
+    margin-top: 20px;
+  }
+  section .main-part .searchbox .search{
+    max-width: 900px;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+  }
+  section .main-part .searchbox .icons{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 12px 20px;
+    justify-content:space-between ;
+    pointer-events: none;
+  }
+  section .main-part .buttons{
+    margin-top: 21px;
+  
+  }
+  section .main-part .buttons button{
+    margin: 0 5px;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4.5px;
+    border: 1px solid transparent;
+    outline:none ;
+  }
+  section .main-part .buttons button:hover{
+    border: 1px solid #ccc;
+  }
+  .translation{
+    display: flex;
+    margin-top: 32px;
+  }
+  .translation li{
+    list-style: none;
+    margin: 0 5.5px;
+    font-size: 13.5px;
+  }
+  .translation li a{
+    text-decoration: none;
+    color: #1a0dab;
+  }
+  .translation li a:hover{
+    text-decoration:underline;
+  }
+  .footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #f2f2f2;
+  }
+  .row2{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .row2 ul{
+    display: flex;
+  
+  }
+  .row2 ul li{
+    list-style: none;
+    margin-left: 25px;
+  }
+  .row2 ul li a{
+    text-decoration: none;
+    font-size: 14.5px;
+    color:black;
+    margin-right: 24px;
+    
+  }
+  .img2{
+    width: 27px;
+    border-radius: 25px;
+  
+  }
+  .img2:hover{
+    background-color: grey;
+    box-shadow: black;
+  }
+  .search::placeholder {
+    color: black;
+  }
+</style>
+
+<body>
+  <section>
+    <header>
+      <ul>
+        <li><a href="#">Gmail</a></li>
+        <li><a href="#">Images</a></li>
+        
+      </ul>
+    </header>
+    <div class="main-part">
+      <img src="image/google.png" alt="">
+
+      
+      <div class="searchbox">
+        <form action="https://www.google.com/search" target="_blank">
+        <input type="text" class="search" name="q" style="width: 600px;" placeholder="Search">
+      </form>
+        <div class="icons">
+          <div><img src="image/search.png" alt="" class="mic"></div>
+          <div><img src="img/mic.png" alt="" class="searchh"></div>
+        </div>
+      </div>
+   
+      <div class="buttons">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+      </div>
+      <ul class="translation">
+        <li>Google offered in:</li>
+        <li><a href="#">नेपाली</a></li>
+
+      </ul>
+    </div>
+    <div class="footer">
+      <div class="row2">
+      <ul>
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">How Search works</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+    </div>
+  </section>
+</body>
+</html>
